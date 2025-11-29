@@ -1,0 +1,108 @@
+<!doctype html>
+<html pt-br>
+
+<head>
+    <meta charset="UTF-8">
+    <style>
+        body {
+            background-color: #606060;
+            color: white;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            /* duas colunas iguais */
+            gap: 10px;
+            /* espaço entre elas */
+        }
+
+        .col {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            height: 100vh;
+            margin: 0;
+            font-family: sans-serif;
+        }
+
+        h1 {
+            margin-bottom: -15px;
+        }
+
+        div#fp {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            height: 100vh;
+            font-family: sans-serif;
+        }
+
+        button {
+            width: 280px;
+            padding: 14px 18px;
+            font-size: 20px;
+            font-weight: bold;
+            font-family: Arial, sans-serif;
+            border: 3px solid #993300;
+            border-radius: 8px;
+            background-color: #996600;
+            cursor: pointer;
+            transition: all 0.08s ease-in-out;
+            -webkit-tap-highlight-color: transparent;
+            margin: 3px;
+        }
+
+        a {
+            text-decoration: none;
+            color: black;
+        }
+    </style>
+</head>
+
+<body>
+    <br>
+    <div class="container">
+        <div class="col">
+            <h1>Código:</h1>
+            <h2>Rafael</h2>
+            <h1>Design:</h1>
+            <h2>Rafael</h2>
+            <h1>Internet:</h1>
+            <h2>Walisson Caetano</h2>
+            <h1>HTML:</h1>
+            <h2>Rafael</h2>
+            <h1>JavaScript:</h1>
+            <h2>Rafael</h2>
+        </div>
+        <div class="col">
+            <h1>Imagem das Árvores:</h1>
+            <h2>Sarah</h2>
+            <h1>Edição:</h1>
+            <h2>Rafael</h2>
+            <h1>Assistência:</h1>
+            <h2>Norton</h2>
+            <h1>CSS:</h1>
+            <h2>Rafael</h2>
+            <h1>Questões:</h1>
+            <h2>Rafael</h2>
+        </div>
+    </div>
+    <div id="fp">
+        <h1>Feito por:</h1>
+        <h2>Rafael Luiz Pereira Gomes</h2><br><br>
+        <button><a href="index.html">Menu</a></button>
+    </div>
+</body>
+<script>
+    function autoScroll() {
+        window.scrollBy(0, 1); // velocidade
+        if (window.innerHeight + window.scrollY < document.body.offsetHeight) {
+            requestAnimationFrame(autoScroll);
+        }
+    }
+
+    autoScroll();
+</script>
+
+</html>
