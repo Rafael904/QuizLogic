@@ -175,7 +175,7 @@ document.addEventListener("keydown", e => update(e.key));
 function Questao15() {
     ano.innerHTML = `2025`
     pagina.innerHTML = `<h1 id="q"><span class="nq">15.</span> Labirinto</h1>
-    <div id="maze"></div>`
+    <div id="maze" onclick="Questao16()"></div>`
     // desenha primeira vez
     update();
 }
