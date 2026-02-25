@@ -84,7 +84,8 @@ function Questao8() {
         if (teste === 1) {
             teste = 0;
         } else {
-            Questao1();
+            pagina.innerHTML = `<h1 id="q"><span class="nq">8.</span> Demorou demais</h1>
+    <button onclick="Questao1()">Recomecar</button>`;
         }
     }, 2000);
     pagina.innerHTML = `
@@ -357,7 +358,7 @@ function Questao41() {
 <button onclick="Recomecar()">38</button></div>`;
 }
 function Questao42() {
-    pagina.innerHTML = `<h1>Clique no <span onclick="Questao43()">quadrado</span>!</h1>
+    pagina.innerHTML = `<h1><span id="nq">42.</span> Clique no <span onclick="Questao43()">quadrado</span>!</h1>
 <div id="game-area">
     <div id="target"></div>
 </div>`
@@ -376,12 +377,12 @@ function jogar() {
     t.style.top = Math.random() * maxY + "px"
 }
 function Questao43() {
-    pagina.innerHTML = `<h1 id="q"><span class="nq" onclick = "Questao45()">43.</span> Quantos dias dura a quaresma?</h1>
+    pagina.innerHTML = `<h1 id="q"><span class="nq" onclick = "Questao44()">43.</span> Quantos dias dura a quaresma?</h1>
 <div><button onclick="Recomecar()">35</button>
-<button onclick="Questao44()">40</button></div>
+<button onclick="Questao45()">40</button></div>
 <div><button onclick="Recomecar()">46</button>
 <button onclick="Recomecar()">400</button></div>`;
-    //A resposta certa é 43 (o número da questão), clicando certo o jogador já pula para a 45, mas clicando em 40 o jogador cai na quetão 44 (uma trolagem)
+    //A resposta certa é 40, clicando certo o jogador já pula para a 45, mas clicando em 403 (número da questão) o jogador cai na quetão 44 (uma trolagem)
 }
 function Questao44() {
     //Essa questão é uma trolagem e não tem resposta correta
