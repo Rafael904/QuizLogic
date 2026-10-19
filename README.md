@@ -1,4 +1,4 @@
-# 🚀 Nome do Projeto (ex: QuizLogic)
+# 🚀 QuizLogic
 
 > Um jogo web interativo desenvolvido para testar conhecimentos através de perguntas, desafios e lógica.
 
